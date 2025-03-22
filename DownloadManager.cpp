@@ -49,8 +49,8 @@ void DownloadManager::childOne() {
 				//checks if there is any new updates
 				if (vals.at(0) > h_Volume || vals.at(1) > h_Chapter) {
 					logger.log("Found a new release! installing");
-					sqlite3pp::command cmd(db, "UPDATE mangas SET highest_Volume = ?, highest_Chapter = ? WHERE mangaID = ?");
-					cmd.binder() << vals.at(0) << vals.at(1) << mangaID;
+					sqlite3pp::command cmd(db, "UPDATE mangas SET highest_Volume = ?, highest_Chapter = ?,title =? WHERE mangaID = ?");
+					cmd.binder() << vals.at(0) << vals.at(1) <<dex.getTitle()<< mangaID;
 					cmd.execute();
 					dex.writeMangaToDisk();
 				}
