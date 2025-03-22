@@ -1,19 +1,15 @@
 #include  <iostream>
-
-#include "util/Logger.h";
-
-#include "MangaDex.h"
-
+#include "Website.h"
 int main(int argc,char* argv[]) {
 
 	
 
 
-	//Handling and assining of the arguments
-	Logger logger;
-	CmdParser parser(false);
+	initaliseSite(argc, argv);
 
-	MangaDex dex(&parser,&logger,argc,argv);
-	dex.writeMangaToDisk();
+	
+	
+
+	
 
 }

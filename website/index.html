@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body><!-- softwarm volcanic glow-->
+    <div class = "Header">
+
+            <button id = "mangaForumbtn">Add a manga</button>
+            <script type="text/javascript">
+                document.getElementById("mangaForumbtn").onclick = function () {
+                    location.href = "/addManga";
+                }
+            </script>
+        <div class="main-container">
+        <table>
+            <tr>
+                <th>MangaID</th>
+                <th>Title</th>
+                <th>Highest volume</th>
+                <th>Highest chapter</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

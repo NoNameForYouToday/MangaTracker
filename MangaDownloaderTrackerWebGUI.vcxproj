@@ -131,6 +131,7 @@
     <ClCompile Include="libs\simdjson.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MangaDex.cpp" />
+    <ClCompile Include="Website.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libs\cmdParser.h" />
@@ -143,6 +144,7 @@
     <ClInclude Include="MangaDex.h" />
     <ClInclude Include="util\FileHandler.h" />
     <ClInclude Include="util\Logger.h" />
+    <ClInclude Include="Website.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

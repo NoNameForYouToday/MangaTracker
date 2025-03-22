@@ -1,0 +1,10 @@
+*{
+    background-color: black;
+}
+.main-container{
+    background-color: rgb(83, 78, 78);
+    display: flex;
+    width: 200px;
+    height: 200px;
+    
+}

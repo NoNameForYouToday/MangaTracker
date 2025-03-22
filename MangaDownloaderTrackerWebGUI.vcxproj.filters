@@ -24,6 +24,9 @@
     <ClCompile Include="libs\simdjson.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Website.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util\FileHandler.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="libs\sqlite3ppext.ipp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Website.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
