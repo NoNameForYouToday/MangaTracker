@@ -6,5 +6,6 @@
 #include "util/Logger.h";
 #include "MangaDex.h"
 
+
 void initaliseSite(int argc,char* argv[]);
 void initaliseDB(sqlite3pp::database*);

@@ -107,6 +107,6 @@ void initaliseSite(int argc,char* argv[]) {
 	});
 	app.port(port).multithreaded().run();
 
-	
+	std::cout << "Hello";
 
 }
