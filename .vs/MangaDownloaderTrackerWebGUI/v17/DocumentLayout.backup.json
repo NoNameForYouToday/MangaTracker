@@ -7,20 +7,32 @@
       "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:Website.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:website\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\pages\\addManga.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:website\\pages\\addManga.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:Website.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\libs\\sqlite3pp.ipp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:libs\\sqlite3pp.ipp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\MangaDex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:MangaDex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:website\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\util\\FileHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:util\\FileHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,31 +42,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "sqlite3pp.ipp",
-              "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\libs\\sqlite3pp.ipp",
-              "RelativeDocumentMoniker": "libs\\sqlite3pp.ipp",
-              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\libs\\sqlite3pp.ipp",
-              "RelativeToolTip": "libs\\sqlite3pp.ipp",
-              "ViewState": "AgIAAOcBAAAAAAAAAAAYwPkBAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-21T22:32:26.891Z"
+              "DocumentIndex": 1,
+              "Title": "index.js",
+              "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\js\\index.js",
+              "RelativeDocumentMoniker": "website\\js\\index.js",
+              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\js\\index.js*",
+              "RelativeToolTip": "website\\js\\index.js*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-22T12:49:04.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\index.html",
+              "RelativeDocumentMoniker": "website\\index.html",
+              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\index.html",
+              "RelativeToolTip": "website\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-22T12:24:01.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.css",
+              "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\css\\index.css",
+              "RelativeDocumentMoniker": "website\\css\\index.css",
+              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\css\\index.css",
+              "RelativeToolTip": "website\\css\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-22T12:23:59.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileHandler.h",
+              "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\util\\FileHandler.h",
+              "RelativeDocumentMoniker": "util\\FileHandler.h",
+              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\util\\FileHandler.h",
+              "RelativeToolTip": "util\\FileHandler.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-22T12:04:48.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "addManga.html",
+              "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\pages\\addManga.html",
+              "RelativeDocumentMoniker": "website\\pages\\addManga.html",
+              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\pages\\addManga.html",
+              "RelativeToolTip": "website\\pages\\addManga.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-22T12:46:59.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Website.h",
               "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.h",
               "RelativeDocumentMoniker": "Website.h",
               "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.h",
               "RelativeToolTip": "Website.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T22:17:24.558Z"
+              "WhenOpened": "2025-03-21T22:17:24.558Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -62,36 +127,25 @@
               "Title": "Website.cpp",
               "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.cpp",
               "RelativeDocumentMoniker": "Website.cpp",
-              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.cpp",
-              "RelativeToolTip": "Website.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.cpp*",
+              "RelativeToolTip": "Website.cpp*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T21:07:38.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Main.cpp",
               "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T20:29:18.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MangaDex.cpp",
-              "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\MangaDex.cpp",
-              "RelativeDocumentMoniker": "MangaDex.cpp",
-              "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\MangaDex.cpp",
-              "RelativeToolTip": "MangaDex.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T20:29:44.389Z"
+              "WhenOpened": "2025-03-21T20:29:18.496Z",
+              "EditorCaption": ""
             }
           ]
         }
