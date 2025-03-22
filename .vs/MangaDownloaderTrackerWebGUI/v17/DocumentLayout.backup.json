@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:Website.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:website\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{24FA1B00-76D4-4C8D-9F57-3154E3FAD423}|MangaDownloaderTrackerWebGUI.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,37 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\index.html",
               "RelativeDocumentMoniker": "website\\index.html",
               "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\index.html",
               "RelativeToolTip": "website\\index.html",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-03-22T19:48:00.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "index.js",
               "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\js\\index.js",
               "RelativeDocumentMoniker": "website\\js\\index.js",
               "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\website\\js\\index.js",
               "RelativeToolTip": "website\\js\\index.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-03-22T19:39:21.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Main.cpp",
               "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
@@ -69,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Website.cpp",
               "DocumentMoniker": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.cpp",
               "RelativeDocumentMoniker": "Website.cpp",
               "ToolTip": "A:\\cpp\\projects\\MangaDownloaderTrackerWebGUI\\Website.cpp",
               "RelativeToolTip": "Website.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAowGkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T21:07:38.466Z",
               "EditorCaption": ""

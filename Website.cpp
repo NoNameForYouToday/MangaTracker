@@ -110,7 +110,3 @@ void initaliseSite(int argc,char* argv[]) {
 	
 
 }
-
-void initaliseDB(sqlite3pp::database* db) {
-	
-}

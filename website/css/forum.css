@@ -12,3 +12,10 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+#addManga-form{
+    display: flex;
+    flex-direction:column;
+    margin-left:auto;
+    margin-right:auto;
+
+}
