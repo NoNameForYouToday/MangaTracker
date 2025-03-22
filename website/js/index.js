@@ -7,7 +7,7 @@ function updateTable() {
     const tablebody = document.querySelector("#manga-table tbody");
     tablebody.innerHTML = "";
 
-    fetch("/api/getMangas", {
+    fetch("/getMangas", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
     }).then(res => res.json())

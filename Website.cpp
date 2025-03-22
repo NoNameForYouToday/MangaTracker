@@ -1,5 +1,8 @@
 #include "Website.h"
 
+
+
+
 void initaliseSite(int argc,char* argv[]) {
 	Logger logger;
 	CmdParser parser(false);
@@ -30,9 +33,9 @@ void initaliseSite(int argc,char* argv[]) {
 	});
 	
 	sqlite3pp::database db("manga.db");
-	db.execute("CREATE TABLE IF NOT EXISTS mangas (id INTEGER PRIMARY KEY, mangaID TEXT, title TEXT, Highest_Volume REAL,Highest_Chapter REAL);");
+	db.execute("CREATE TABLE IF NOT EXISTS mangas (id INTEGER PRIMARY KEY, mangaID TEXT, title TEXT,lang TEXT, highest_Volume REAL,highest_Chapter REAL , outDir TEXT);");
 
-	CROW_ROUTE(app, "/api/getMangas")([&db](const crow::request& req) {
+	CROW_ROUTE(app, "/getMangas")([&db](const crow::request& req) {
 		sqlite3pp::query qry(db, "SELECT * FROM mangas");
 		int index{ 0 };
 		crow::json::wvalue toReturn;
@@ -42,10 +45,10 @@ void initaliseSite(int argc,char* argv[]) {
 
 
 			crow::json::wvalue item;
-			std::string mangaID, mangaTitle;
+			std::string mangaID, mangaTitle,desiredLanuage , outDir;
 			float h_Volume, h_Chapter;
 
-			row.getter() >> id >> mangaID >> mangaTitle >> h_Volume >> h_Chapter;
+			row.getter() >> id >> mangaID >> mangaTitle >> desiredLanuage >> h_Volume >> h_Chapter >> outDir;
 
 
 			item["id"] = id;
@@ -53,13 +56,45 @@ void initaliseSite(int argc,char* argv[]) {
 			item["title"] = mangaTitle;
 			item["h_Volume"] = h_Volume;
 			item["h_Chapter"] = h_Chapter;
+			item["outDir"] = outDir;
+			item["lang"] = desiredLanuage;
 
 			toReturn[index++] = std::move(item);
 			
 		}
 		return toReturn;
 	});
+	//adds the manga To The Database
+	CROW_ROUTE(app, "/addManga").methods(crow::HTTPMethod::POST)([&db](const crow::request& req) {
+		
+		float highestVolume = 0.0f, highestChapter = 0.0f;
 
+		std::string mangaID = "";
+		std::string outDir = "";
+		crow::multipart::message msg(req);
+
+		std::vector<crow::multipart::part> parts = msg.parts;
+		
+		mangaID = parts.at(0).body;
+		outDir = parts.at(1).body;
+
+
+		if (mangaID.empty() || outDir.empty()) {
+			CROW_LOG_ERROR << "Missing required fields";
+			return crow::response(400, "Missing required fields");
+		}
+
+		sqlite3pp::command cmd(db, "INSERT INTO mangas (mangaID,lang,outDir,highest_Volume, highest_Chapter) VALUES (?, ?, ?, ?, ?)");
+		 cmd.binder() << mangaID << "en" << outDir << highestVolume << highestChapter;
+		 cmd.execute();
+
+		crow::response res;
+		res.code = 302;
+		res.set_header("Location", "/");
+
+		return res;
+
+	});
 
 	app.port(port).multithreaded().run();
 
