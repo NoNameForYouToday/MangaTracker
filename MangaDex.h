@@ -40,7 +40,8 @@ class MangaDex
 	
 	public:
 		MangaDex(CmdParser* parser, Logger* logger, int argc,char* argv[]);
-
+		
+		MangaDex(Logger* logger, int argc,const char* argv[]);
 		void init(int argc, char* argv[]);
 
 	//	MangaDex();
@@ -66,28 +67,17 @@ class MangaDex
 
 		static bool isChapterLargerThanTheOther(chapterInfo const& cinfo1, chapterInfo const& cinfo2);
 
+		std::vector<float> getHighestChapterAndVolume();
+
 		//bool writeMangaToDisk(std::string mode);
 		std::string sendRequestUsingBASEURL(std::string addonURL);
-		
-	private: 
-		std::string mangaID{}, outputDir{}, mode{}, quality{}, desiredLanguage{};
-		bool dontCompile = false;
-		int rateLimit = 20; //defualt
-		int method = 1; //defualt
-
-		long rangeMax{}, rangeMin{};
-		bool isRangeEnabled = false;
-		bool isRangeSettingMax = false;
-		Logger* logg;
-		CmdParser* parser;
-
 		//URLS
 		const std::string BASEURL = "https://api.mangadex.org";
 		const std::string BASEURL_MANGA = "/manga/";
 		const std::string BASEURL_COVER = "/cover/";
 		const std::string BASEURL_CHAPTER = "/chapter/";
 		const std::string BASEURL_CHAPTER_IMAGES = "/at-home/server/";;
-		
+
 
 		const std::string BASEDOWNLOAD_URL = "https://uploads.mangadex.org";
 		const std::string FILEDOWNLOAD_URL_COVER = "/covers/";
@@ -96,7 +86,7 @@ class MangaDex
 
 		//https clients
 		httplib::Client baseCli{ BASEURL };
-		httplib::Client baseDownloadCli{BASEDOWNLOAD_URL};
+		httplib::Client baseDownloadCli{ BASEDOWNLOAD_URL };
 
 		//cmd arguments
 		const std::string mangaID_identifier = "-i";
@@ -109,5 +99,18 @@ class MangaDex
 		const std::string retrivalMethod_identifier = "-gm";
 		const std::string dontCompile_identifier = "-dc";
 		const std::string range_identifier = "-r";
+	private: 
+		std::string mangaID{}, outputDir{}, mode{}, quality{}, desiredLanguage{};
+		bool dontCompile = false;
+		int rateLimit = 20; //defualt
+		int method = 1; //defualt
+
+		long rangeMax{}, rangeMin{};
+		bool isRangeEnabled = false;
+		bool isRangeSettingMax = false;
+		Logger* logg;
+		CmdParser* parser;
+
+		
 };
 

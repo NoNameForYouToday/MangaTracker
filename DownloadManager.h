@@ -2,16 +2,25 @@
 #include <chrono>
 #include <thread>
 #include "libs/sqlite3pp.h";
+#include "libs/cmdParser.h"
 #include "util/Logger.h";
 #include "MangaDex.h"
 
-class DownloadManager
-{
-;
+struct manga {
+	std::string id,title,lang;
+	float highestVolume,highestChapter;
+};
+
+class DownloadManager{
+public:	
 	DownloadManager(bool* lock);
 	void runThread();
 	void childOne();
-	const int timeCheckInterval = 60*5; //5 min
+	
+	
+
+private:
+	const int timeCheckInterval = 5; //5 min
 	bool* locker;
 	Logger logger;
 };

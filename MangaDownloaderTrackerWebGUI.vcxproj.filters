@@ -27,6 +27,9 @@
     <ClCompile Include="Website.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DownloadManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util\FileHandler.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Website.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

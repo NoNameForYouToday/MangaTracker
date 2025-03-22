@@ -33,7 +33,7 @@ void initaliseSite(int argc,char* argv[]) {
 	});
 	
 	sqlite3pp::database db("manga.db");
-	db.execute("CREATE TABLE IF NOT EXISTS mangas (id INTEGER PRIMARY KEY, mangaID TEXT, title TEXT,lang TEXT, highest_Volume REAL,highest_Chapter REAL , outDir TEXT);");
+	db.execute("CREATE TABLE IF NOT EXISTS mangas (id INTEGER PRIMARY KEY, mangaID TEXT, title TEXT,lang TEXT, highest_Volume REAL,highest_Chapter REAL , outDir TEXT,state TEXT);");
 
 	CROW_ROUTE(app, "/getMangas")([&db](const crow::request& req) {
 		sqlite3pp::query qry(db, "SELECT * FROM mangas");
@@ -43,12 +43,14 @@ void initaliseSite(int argc,char* argv[]) {
 		for (auto row : qry) {
 			int id;
 
+			char* args;
 
 			crow::json::wvalue item;
-			std::string mangaID, mangaTitle,desiredLanuage , outDir;
+			std::string mangaID, mangaTitle,desiredLanuage , outDir, state;
 			float h_Volume, h_Chapter;
 
-			row.getter() >> id >> mangaID >> mangaTitle >> desiredLanuage >> h_Volume >> h_Chapter >> outDir;
+
+			row.getter() >> id >> mangaID >> mangaTitle >> desiredLanuage >> h_Volume >> h_Chapter >> outDir>>state;
 
 
 			item["id"] = id;
@@ -58,7 +60,7 @@ void initaliseSite(int argc,char* argv[]) {
 			item["h_Chapter"] = h_Chapter;
 			item["outDir"] = outDir;
 			item["lang"] = desiredLanuage;
-
+			item["state"] = state;
 			toReturn[index++] = std::move(item);
 			
 		}
@@ -84,8 +86,8 @@ void initaliseSite(int argc,char* argv[]) {
 			return crow::response(400, "Missing required fields");
 		}
 
-		sqlite3pp::command cmd(db, "INSERT INTO mangas (mangaID,lang,outDir,highest_Volume, highest_Chapter) VALUES (?, ?, ?, ?, ?)");
-		 cmd.binder() << mangaID << "en" << outDir << highestVolume << highestChapter;
+		sqlite3pp::command cmd(db, "INSERT INTO mangas (mangaID,lang,outDir,highest_Volume, highest_Chapter,state) VALUES (?, ?, ?, ?, ?,?)");
+		 cmd.binder() << mangaID << "en" << outDir << highestVolume << highestChapter << "new";
 		 cmd.execute();
 
 		crow::response res;
@@ -106,7 +108,5 @@ void initaliseSite(int argc,char* argv[]) {
 		return res;
 	});
 	app.port(port).multithreaded().run();
-
-	std::cout << "Hello";
 
 }

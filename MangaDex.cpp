@@ -6,6 +6,8 @@ MangaDex::MangaDex(CmdParser* parser, Logger* logger,int argc,char* argv[]) {
 	this->init(argc, argv);
 }
 
+
+
 void MangaDex::init(int argc,char* argv[]) {
 
 
@@ -643,4 +645,37 @@ bool MangaDex::isChapterLargerThanTheOther(chapterInfo const& cinfo1,chapterInfo
 		return std::stof(cinfo1.chapter) < std::stof(cinfo2.chapter);
 	}
 	return false;
+}
+
+std::vector<float> MangaDex::getHighestChapterAndVolume() {
+	std::vector<float> hValues;
+	float highestChapter{ 0 }, highestVolume{ 0 };
+	std::string responce = sendRequestUsingBASEURL(BASEURL_MANGA + this->mangaID + "/feed?translatedLanguage[]=" + desiredLanguage);
+	simdjson::ondemand::parser parserb;
+	auto json = parserb.iterate(responce);
+
+
+	//max limit
+	long limit = json["total"].get_int64().value();
+
+	responce = sendRequestUsingBASEURL(BASEURL_MANGA + this->mangaID + "/feed?translatedLanguage[]=" + desiredLanguage + "&limit=" + std::to_string(limit));
+	simdjson::ondemand::parser parser;
+	json = parser.iterate(responce);
+	for (auto chap : json["data"].get_array()) {
+		auto volObj = chap["attributes"]["volume"];
+		if (!volObj.is_null()) {
+
+			float currentVol = std::stof(convertFromViewToString(volObj.get_string().value()));
+			if (currentVol > highestVolume) {
+				highestVolume = currentVol;
+			}
+		}
+		float currentChapter = std::stof(convertFromViewToString(chap["attributes"]["chapter"].get_string().value()));
+		if (currentChapter > highestChapter) {
+			highestChapter = currentChapter;
+		}
+	}
+	hValues.push_back(highestVolume);
+	hValues.push_back(highestChapter);
+	return hValues;
 }
