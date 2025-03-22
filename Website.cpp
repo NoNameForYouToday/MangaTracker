@@ -95,7 +95,16 @@ void initaliseSite(int argc,char* argv[]) {
 		return res;
 
 	});
+	CROW_ROUTE(app, "/delete")([&db](const crow::request& req) {
+		std::string id = req.url_params.get("id");
+		std::string query = "DELETE FROM mangas WHERE mangaID = '" + id + "';";
+		db.execute(query.c_str());
 
+		crow::response res;
+		res.code = 302;
+		res.set_header("Location", "/");
+		return res;
+	});
 	app.port(port).multithreaded().run();
 
 	

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body><!-- softwarm volcanic glow-->
-    <div class = "Header">
+ 
 
             <button id = "mangaForumbtn">Add a manga</button>
             <script type="text/javascript">
@@ -15,14 +15,21 @@
                     location.href = "static/pages/addManga.html";
                 }
             </script>
-        <div class="main-container">
+    <div class="main-container">
         <table id="manga-table">
-            <tr>
-                <th>MangaID</th>
-                <th>Title</th>
-                <th>Highest volume</th>
-                <th>Highest chapter</th>
-            </tr>
+            <thead>
+                <tr>
+                    <td>MangaID</td>
+                    <td>Title</td>
+                    <td>Language</td>
+                    <td>Highest volume</td>
+                    <td>Highest chapter</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
         </table>
     </div>
         <script src="static/js/index.js"></script>
