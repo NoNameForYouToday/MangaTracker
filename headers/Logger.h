@@ -20,14 +20,24 @@ public:
 		log("Log file is at: " + logFilePath);
 	}
 
+	std::string getTimeFormatted(){
+		auto now = std::chrono::system_clock::now();
+		std::time_t time  = std::chrono::system_clock::to_time_t(now);
+
+		//formating time 
+		struct tm *local_Time = std::localtime(&time);
+		std::ostringstream ss;
+		ss << std::put_time(local_Time,"[%d-%m-%Y][%H-%M-%S]: ");
+		return ss.str();
+	}
 	
 	//TODO add the option to write to a file
 	void log(std::string message) {
-		//std::string timeFormatted{ getTimeFormatted() };
+		std::string timeFormatted{ getTimeFormatted() };
 
-		FileHandler::writeToFile(this->logFilePath,"timeFormatted"+message+"\n");
+		FileHandler::writeToFile(this->logFilePath, timeFormatted+message+"\n");
 
-		std::cout << "timeFormatted" << message << '\n';
+		std::cout << timeFormatted << message << '\n';
 	}
 	void errorLog(std::string message) {
 		//Calls its child function
