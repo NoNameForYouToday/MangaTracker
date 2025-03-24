@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "/usr/bin/g++",
+      "type": "shell",
+      "args": [
+        "-std=c++20",       // Use C++20 standard
+        "-o", "MangaTracker",       // Output executable name
+        "Main.cpp",  "MangaDex.cpp","Website.cpp","DownloadManager.cpp", // Source files
+        "-I", "./libs",      // Include paths (if any additional)
+        "-I", "./util",
+        "-I", "./headers",
+        
+        "-lssl", "-lcrypto", "-lsimdjson", "-lzip","-lpthread", "-lsqlite3", // Link libraries
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$gcc"
+    }
+  ]
+}
