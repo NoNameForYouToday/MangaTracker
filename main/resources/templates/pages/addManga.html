@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+   
+    <link rel="stylesheet" href="/css/forum.css">
+</head>
+<body>
+    
+        <button id="homebtn">Go back to menu</button>
+        <script type="text/javascript">
+                document.getElementById("homebtn").onclick = function () {
+                    location.href = "/";
+                }
+        </script>
+
+        <div class="main-container">
+            <form id="addManga-form" action="/submitManga" method="post">
+                <label for="mangaID">MangaID</label>
+                <input type="text" id="mangaID" name="mangaID" required/>
+
+                <label for="outDir">Output Directory:</label>
+                <input type="text" id="outDir" name="outDir" required />
+
+                <label for="desiredLanguage">Desired language(Defualt en):</label>
+                <input type="text" id="desiredLanguage" name= "desiredLanguage"/>
+
+                <button type="submit" id="submitMangabtn">Add manga</button>
+            </form>
+        </div>
+        <script src="/js/addManga.js"></script>
+</body>
+</html>
