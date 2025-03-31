@@ -17,7 +17,7 @@ public class MangaDownloaderInterface {
 
 
     @Scheduled(fixedRate = 900000)
-    public void checkDatabase(){
+    public  void checkDatabase(){
 
         List<Manga> mangas = mangaDB.findAll();
         for (Manga manga: mangas){
@@ -27,15 +27,17 @@ public class MangaDownloaderInterface {
                 String args[] = new String[]{"-i", manga.getMangaID(), "-o", manga.getOutDir(), "-m", "volume"};
                 MangaDex dex = new MangaDex(args);
 
+                mangaDB.updateMangaTitleViaID(manga.getMangaID(),dex.getTitle());
                 float vals[] = dex.getHighestChapterAndVolume();
 
                 if (manga.getHighestVolume() != vals[0] && manga.getHighestChapter() != vals[1]) {
-                    DiscordWebHook.sendRequest("Found new release for: " + manga.getId());
+                    DiscordWebHook.sendRequest("Found new release for: " + manga.getTitle());
                     dex.downloadManga();
-                    DiscordWebHook.sendRequest("Finished fetching for: " + manga.getId());
+                    DiscordWebHook.sendRequest("Finished fetching for: " + manga.getTitle());
                 }
             } catch (Exception e) {
-                DiscordWebHook.sendRequest(e.getMessage());
+                DiscordWebHook.sendRequest("ERROR:"+e.getMessage());
+                e.printStackTrace();
             }
         }
     }

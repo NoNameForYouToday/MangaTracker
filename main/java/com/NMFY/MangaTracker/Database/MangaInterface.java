@@ -13,4 +13,9 @@ public interface MangaInterface extends JpaRepository<Manga,Long> {
     @Transactional
     @Query("DELETE FROM Manga m WHERE m.mangaID = :mangaID")
     void deleteByMangaID(@Param("mangaID") String mangaID);
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE Manga m set m.title = :title WHERE m.mangaID = :mangaID")
+    void updateMangaTitleViaID(@Param("mangaID") String mangaID,@Param("title")String title);
 }
