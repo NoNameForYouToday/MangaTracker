@@ -19,7 +19,7 @@ public class Manga {
     private float highestVolume, highestChapter;
     private String outDir;
     private String state;
-
+    private String mode;
 
     public Manga( String mangaID, String title, String language, float highestVolume, float highestChapter, String outDir, String state) {
 

@@ -35,6 +35,9 @@ public class MangaDownloaderInterface {
                     dex.downloadManga();
                     DiscordWebHook.sendRequest("Finished fetching for: " + manga.getTitle());
                 }
+
+                mangaDB.updateMangaHighestVolumeViaID(manga.getMangaID(), manga.getHighestVolume());
+                mangaDB.updateMangaHighestChapterViaID(manga.getMangaID(), manga.getHighestChapter());
             } catch (Exception e) {
                 DiscordWebHook.sendRequest("ERROR:"+e.getMessage());
                 e.printStackTrace();

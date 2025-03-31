@@ -2,15 +2,7 @@
 window.onload = function () {
     updateTable();
 
-    function reCheckRequest(){
-        fetch("/api/recheck", {
-            method:"POST"
-        });
-    }
 
-    const recheckBtn = document.getElementById("recheckBtn");
-
-    reCheckRequest.addEventListener("click",reCheckRequest)
     function updateTable() {
         const table = document.querySelector("#manga-table");
         const tablebody = document.querySelector("#manga-table tbody");

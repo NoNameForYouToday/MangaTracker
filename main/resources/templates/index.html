@@ -16,6 +16,15 @@
                     location.href = "/addManga";
                 }
             </script>
+        <script type="text/javascript">
+            const recheckBtn = document.getElementById("recheckBtn");
+
+    recheckBtn.addEventListener("click",function(){
+          fetch("/api/recheck", {
+                 method:"POST"
+             });
+        });
+        </script>
     <div class="main-container">
         <table id="manga-table">
             <thead>
