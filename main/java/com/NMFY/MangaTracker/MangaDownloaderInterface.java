@@ -1,5 +1,7 @@
-package com.NMFY.MangaTracker.Database;
+package com.NMFY.MangaTracker;
 
+import com.NMFY.MangaTracker.Database.Manga;
+import com.NMFY.MangaTracker.Database.MangaInterface;
 import com.NMFY.MangaTracker.util.DiscordWebHook;
 import downloader.Downloader.MangaDex;
 import org.springframework.beans.factory.annotation.Autowired;
