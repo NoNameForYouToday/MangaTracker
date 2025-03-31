@@ -32,7 +32,7 @@ public class Manga {
         this.state = state;
     }
 
-    public Manga(String mangaID, String title, String language, String state, String outDir) {
+    public Manga(String mangaID, String title, String language, String state,String mode, String outDir) {
 
         this.mangaID = mangaID;
         this.title = title;
@@ -41,8 +41,9 @@ public class Manga {
         this.outDir = outDir;
         this.highestVolume = 0.0f;
         this.highestChapter = 0.0f;
+        this.mode = mode;
     }
-    public Manga( String mangaID, String title, String language,  String outDir) {
+    public Manga( String mangaID, String title, String language, String mode ,String outDir) {
         this.mangaID = mangaID;
         this.title = title;
         this.language = language;
@@ -50,14 +51,25 @@ public class Manga {
         this.outDir = outDir;
         this.highestVolume = 0.0f;
         this.highestChapter = 0.0f;
+        this.mode = mode;
     }
-    public Manga(String mangaID,  String outDir, String language) {
+    public Manga(String mangaID,  String outDir,String mode, String language) {
         this.mangaID = mangaID;
         this.language = language;
         this.state = "initialised";
         this.outDir = outDir;
         this.highestVolume = 0.0f;
         this.highestChapter = 0.0f;
+        this.mode = mode;
+    }
+    public Manga(String mangaID,  String outDir,String mode) {
+        this.mangaID = mangaID;
+        this.language = "en";
+        this.state = "initialised";
+        this.outDir = outDir;
+        this.highestVolume = 0.0f;
+        this.highestChapter = 0.0f;
+        this.mode = mode;
     }
     public Manga(String mangaID,  String outDir) {
         this.mangaID = mangaID;

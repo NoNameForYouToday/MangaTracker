@@ -32,6 +32,9 @@ public class WebApp {
         if(manga.getLanguage()==null|| manga.getLanguage()==""){
             manga.setLanguage("en");
         }
+        if (manga.getMode() == null || manga.getMode() == ""){
+            manga.setMode("volume");
+        }
 
         for (Manga manga1: mangaDB.findAll()){
             if (manga1.getMangaID().equals(manga.getMangaID())) return new ResponseEntity<>("Error: MangaID already exits in the database", HttpStatus.INTERNAL_SERVER_ERROR);

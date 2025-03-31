@@ -23,13 +23,14 @@ window.onload = function () {
                             var hVolume_cell = row.insertCell(3);
                             var hChapter_cell = row.insertCell(4);
                             var state_cell = row.insertCell(5);
+                            var mode_cell = row.insertCell(6);
                             var removeButton_cell = row.insertCell(-1);
                             mangaID_cell.textContent = entry["mangaID"];
                             title_cell.textContent = entry["title"];
                             language_cell.textContent = entry["language"];
                             hVolume_cell.textContent = entry["highestVolume"];
                             hChapter_cell.textContent = entry["highestChapter"];
-
+                            mode_cell.textContent = entry["mode"];
 
                             //creates the delete Button
                             const button = document.createElement('button');

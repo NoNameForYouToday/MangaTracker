@@ -24,7 +24,7 @@ public class MangaDownloaderInterface {
             try {
 
 
-                String args[] = new String[]{"-i", manga.getMangaID(), "-o", manga.getOutDir(), "-m", "volume"};
+                String args[] = new String[]{"-i", manga.getMangaID(), "-o", manga.getOutDir(), "-m", manga.getMode()};
                 MangaDex dex = new MangaDex(args);
 
                 mangaDB.updateMangaTitleViaID(manga.getMangaID(),dex.getTitle());
