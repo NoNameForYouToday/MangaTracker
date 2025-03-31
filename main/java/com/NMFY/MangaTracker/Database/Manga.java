@@ -1,8 +1,6 @@
-package com.NMFY.MangaTracker;
+package com.NMFY.MangaTracker.Database;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,6 +11,7 @@ import lombok.Setter;
 public class Manga {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     private String mangaID;
     private String title;

@@ -1,4 +1,4 @@
-package com.NMFY.MangaTracker;
+package com.NMFY.MangaTracker.Database;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,7 @@ import java.util.List;
 public class DatabaseHandler {
 
     @Autowired
-    private MangaI mangaDB;
+    private MangaInterface mangaDB;
 
     @GetMapping("/mangas")
     public List<Manga> getMangas(){
