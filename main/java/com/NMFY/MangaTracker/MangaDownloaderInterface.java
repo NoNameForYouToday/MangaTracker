@@ -26,6 +26,7 @@ public class MangaDownloaderInterface {
 
                 String args[] = new String[]{"-i", manga.getMangaID(), "-o", manga.getOutDir(), "-m", "volume"};
                 MangaDex dex = new MangaDex(args);
+
                 float vals[] = dex.getHighestChapterAndVolume();
 
                 if (manga.getHighestVolume() != vals[0] && manga.getHighestChapter() != vals[1]) {
