@@ -27,13 +27,14 @@ public class MangaDownloaderInterface {
                 String args[] = new String[]{"-i", manga.getMangaID(), "-o", manga.getOutDir(), "-m", manga.getMode()};
                 MangaDex dex = new MangaDex(args);
 
-                mangaDB.updateMangaTitleViaID(manga.getMangaID(),dex.getTitle());
+                String title = dex.getTitle();
+                mangaDB.updateMangaTitleViaID(manga.getMangaID(),title);
                 float vals[] = dex.getHighestChapterAndVolume();
 
                 if (manga.getHighestVolume() != vals[0] && manga.getHighestChapter() != vals[1]) {
-                    DiscordWebHook.sendRequest("Found new release for: " + manga.getTitle());
+                    DiscordWebHook.sendRequest("Found new release for: " + title);
                     dex.downloadManga();
-                    DiscordWebHook.sendRequest("Finished fetching for: " + manga.getTitle());
+                    DiscordWebHook.sendRequest("Finished fetching for: " + title);
                 }
 
                 mangaDB.updateMangaHighestVolumeViaID(manga.getMangaID(), manga.getHighestVolume());
