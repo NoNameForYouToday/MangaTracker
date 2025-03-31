@@ -4,6 +4,7 @@ import com.NMFY.MangaTracker.Database.Manga;
 import com.NMFY.MangaTracker.Database.MangaInterface;
 import com.NMFY.MangaTracker.util.DiscordWebHook;
 import downloader.Downloader.MangaDex;
+import downloader.Main;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -27,12 +28,16 @@ public class MangaDownloaderInterface {
                 String args[] = new String[]{"-i", manga.getMangaID(), "-o", manga.getOutDir(), "-m", manga.getMode()};
                 MangaDex dex = new MangaDex(args);
 
-                String title = dex.getTitle();
+                String title = dex.getTitle().replace("\"","");
                 mangaDB.updateMangaTitleViaID(manga.getMangaID(),title);
                 float vals[] = dex.getHighestChapterAndVolume();
-
+                Main.debug(title);
                 if (manga.getHighestVolume() != vals[0] && manga.getHighestChapter() != vals[1]) {
-                    DiscordWebHook.sendRequest("Found new release for: " + title);
+
+                    DiscordWebHook.sendRequest("@everyone \\n"+
+                            "Found new release for: " + title+"\\n" +
+                            "Volume: "+manga.getHighestVolume()+"->"+String.valueOf(vals[0])+"\\n" +
+                            "Chapter: "+manga.getHighestChapter()+"->"+vals[1]);
                     dex.downloadManga();
                     DiscordWebHook.sendRequest("Finished fetching for: " + title);
                 }
