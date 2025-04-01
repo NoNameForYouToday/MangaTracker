@@ -4,11 +4,14 @@ body{
 }
 .main-container{
     background-color: rgb(183, 178, 178);
-    display: flex;
+
+
     width: 50%;
     height: 50%;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 40px;
+     margin-top: 40px;
 }
 td{
     padding-right: 10px;

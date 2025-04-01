@@ -10,10 +10,14 @@
  
 
             <button id = "mangaForumbtn">Add a manga</button>
+            <button id = "authorForumbtn">Add a author</button>
             <button id = "recheckBtn">Check for updates</button>
             <script type="text/javascript">
                 document.getElementById("mangaForumbtn").onclick = function () {
                     location.href = "/addManga";
+                }
+                document.getElementById("authorForumbtn").onclick = function () {
+                    location.href = "/addAuthor";
                 }
             </script>
         <script type="text/javascript">
@@ -26,6 +30,7 @@
         });
         </script>
     <div class="main-container">
+        <div>Mangas</div>
         <table id="manga-table">
             <thead>
                 <tr>
@@ -36,6 +41,7 @@
                     <td>Highest chapter</td>
                     <td>state</td>
                     <td>Mode</td>
+                    <td>Output directory</td>
                     <td>Delete</td>
                 </tr>
             </thead>
@@ -43,7 +49,26 @@
 
             </tbody>
         </table>
+
     </div>
+<div class="main-container">
+    <div>Authors: </div>
+<table id="author-table">
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Number of mangas</td>
+        <td>Language</td>
+        <td>Mode</td>
+        <td>Output directory</td>
+        <td>Delete</td>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+</div>
         <script src="/js/index.js"></script>
 </body>
 </html>

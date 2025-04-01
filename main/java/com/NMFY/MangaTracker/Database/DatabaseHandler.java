@@ -13,6 +13,8 @@ public class DatabaseHandler {
     private MangaDownloaderInterface mangaDL;
     @Autowired
     private MangaInterface mangaDB;
+    @Autowired
+    private AuthorInterface authorDB;
 
     @GetMapping("/mangas")
     public List<Manga> getMangas(){
@@ -22,6 +24,10 @@ public class DatabaseHandler {
     public String checkForUpdates(){
         mangaDL.checkDatabase();
         return "Success";
+    }
+    @GetMapping("/authors")
+    public List<Author> getAuthors(){
+        return authorDB.findAll();
     }
 
 }

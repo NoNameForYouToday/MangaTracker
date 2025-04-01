@@ -29,5 +29,10 @@ public interface MangaInterface extends JpaRepository<Manga,Long> {
     @Query("UPDATE Manga m set m.highestChapter = :highestChapter WHERE m.mangaID = :mangaID")
     void updateMangaHighestChapterViaID(@Param("mangaID") String mangaID,@Param("highestChapter")float highestChapter);
 
+
+
+    @Transactional
+    @Query("SELECT COUNT(m) > 0 FROM Manga m WHERE m.mangaID = :mangaID")
+    boolean exitsByMangaID(@Param("mangaID") String mangaID);
 }
 
