@@ -22,8 +22,9 @@ public class MangaDownloaderInterface {
     @Autowired
     private AuthorInterface authorDB;
 
-    @Scheduled(fixedRate = 900000)
+    @Scheduled(initialDelay = 7000,fixedDelay =1200000 )
     public  void checkDatabase(){
+
         List<Manga> mangas = mangaDB.findAll();
         List<Author> authors = authorDB.findAll();
 
@@ -80,8 +81,8 @@ public class MangaDownloaderInterface {
                     DiscordWebHook.sendRequest("Finished fetching for: " + title);
                 }
 
-                mangaDB.updateMangaHighestVolumeViaID(manga.getMangaID(), manga.getHighestVolume());
-                mangaDB.updateMangaHighestChapterViaID(manga.getMangaID(), manga.getHighestChapter());
+                mangaDB.updateMangaHighestVolumeViaID(manga.getMangaID(), vals[0]);
+                mangaDB.updateMangaHighestChapterViaID(manga.getMangaID(), vals[1]);
             } catch (Exception e) {
                 DiscordWebHook.sendRequest("ERROR:"+e.getMessage());
                 e.printStackTrace();
