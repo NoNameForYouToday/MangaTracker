@@ -71,7 +71,7 @@ public class MangaDownloaderInterface {
                 mangaDB.updateMangaTitleViaID(manga.getMangaID(),title);
                 float vals[] = dex.getHighestChapterAndVolume();
                 Main.debug(title);
-                if (manga.getHighestVolume() != vals[0] && manga.getHighestChapter() != vals[1]) {
+                if (manga.getHighestVolume() != vals[0] || manga.getHighestChapter() != vals[1]) {
 
                     DiscordWebHook.sendRequest("@everyone \\n"+
                             "Found new release for: " + title+"\\n" +
